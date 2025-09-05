@@ -1,1 +1,31 @@
 .DS_Store
+
+### XCode ###
+# Build Products
+build/
+DerivedData/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+
+#*.playground/xcuserdata/
+#*.playground/timeline.xctimeline
+#*.playground/playground.xcworkspace/contents.xcworkspacedata
+#
+## Swift Package Manager
+#.swiftpm/
+#
+## Dependency Management
+#Carthage/Build/
+#Pods/
+#
+## Miscellaneous
+#*.xcworkspace/
+#!*.xcworkspace/contents/xcworkspacedata
+#*.xcuserstate
+#*.xccheckout
+#*.xcscmblueprint
+#*.pbxuser
+#xcshareddata/
