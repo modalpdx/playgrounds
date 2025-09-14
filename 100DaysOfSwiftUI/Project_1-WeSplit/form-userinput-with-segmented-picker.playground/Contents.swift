@@ -2,22 +2,20 @@ import SwiftUI
 import PlaygroundSupport // Required for Playground preview support
 
 struct ContentView: View {
-    @State private var tipPercentage = 15 // default
+    @State private var tipPercentage = 20
     
-    let tipPercentages = [10, 15, 20, 25, 0]
+    let tipPercentages = [0, 10, 15, 20, 30]
     
     var body: some View {
         
         Form {
-            Section("Choose a tip percentage") {
+            Section {
                 Picker("Tip percentage", selection: $tipPercentage) {
                     ForEach(tipPercentages, id: \.self) {
                         Text($0, format: .percent)
                     }
                 }
-                // This picker style shows each percentage as a button in a horizontal row.
                 .pickerStyle(.segmented)
-
             }
         }
 
