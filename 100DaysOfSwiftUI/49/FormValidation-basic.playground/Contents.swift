@@ -19,7 +19,7 @@ struct ContentView: View {
             }
             
             Section {
-                Button("Created account") {
+                Button("Create account") {
                     print("Creating account...")
                 }
             }
